@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#15171c">
+  <title>Floatie Duckie — Roblox Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="server-rail">
+      <a class="rail-logo active" href="#home" aria-label="Home">FD</a>
+      <button class="rail-icon" data-view="projects" aria-label="Projects">▦</button>
+      <button class="rail-icon" data-view="skills" aria-label="Skills">⌘</button>
+      <button class="rail-icon" data-view="about" aria-label="About">◉</button>
+      <div class="rail-spacer"></div>
+      <div class="rail-status" title="Available for projects"></div>
+    </aside>
+
+    <aside class="sidebar">
+      <div class="sidebar-search">
+        <span class="search-symbol">⌕</span>
+        <input id="searchInput" type="search" placeholder="Find a project or skill..." aria-label="Search portfolio">
+        <kbd>/</kbd>
+      </div>
+
+      <div class="side-section">
+        <div class="section-label">PORTFOLIO</div>
+        <button class="side-link selected" data-view="home"><span>⌂</span> Overview</button>
+        <button class="side-link" data-view="projects"><span>▣</span> Projects <b>02</b></button>
+        <button class="side-link" data-view="skills"><span>⌘</span> Skills & tools</button>
+        <button class="side-link" data-view="about"><span>◉</span> About me</button>
+      </div>
+
+      <div class="side-section project-shortcuts">
+        <div class="section-label">FEATURED WORK <span>+</span></div>
+        <button class="project-link" data-project="timer"><i class="project-dot blue"></i> Round Timer System</button>
+        <button class="project-link" data-project="obby"><i class="project-dot violet"></i> Obby Framework</button>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="mini-avatar">FD</div>
+        <div class="profile-meta">
+          <strong>Floatie Duckie</strong>
+          <span><i></i> Roblox developer</span>
+        </div>
+        <button class="more-button" aria-label="More options">···</button>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div class="crumb"><span class="crumb-mark">#</span><strong id="topTitle">overview</strong><span class="crumb-muted">/ portfolio</span></div>
+        <div class="top-actions">
+          <span class="availability"><i></i> Open to projects</span>
+          <a class="top-link" href="#contact">Contact <span>↗</span></a>
+        </div>
+      </header>
+
+      <div class="content-scroll">
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="pulse"></span> ROBLOX GAME DEVELOPER</div>
+            <h1>Hey, I'm <span>Floatie Duckie.</span></h1>
+            <p class="hero-description">I build polished Roblox experiences with thoughtful systems, clean Luau, and satisfying gameplay.</p>
+            <div class="hero-buttons">
+              <a class="primary-button" href="#projects">Explore my work <span>↘</span></a>
+              <a class="secondary-button" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Decorative developer graphic">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="art-card">
+              <div class="art-card-top"><span></span><span></span><span></span><small>LU A U</small></div>
+              <div class="code-lines">
+                <div><em>local</em> developer <b>=</b> <strong>"Floatie Duckie"</strong></div>
+                <div><em>local</em> passion <b>=</b> <strong>true</strong></div>
+                <div class="indent">build(<strong>great_games</strong>)</div>
+                <div class="cursor-line"><i></i></div>
+              </div>
+              <div class="art-card-foot"><span>CREATING IN ROBLOX STUDIO</span><b>✦</b></div>
+            </div>
+            <div class="floating-chip chip-top">✦ &nbsp; Luau scripting</div>
+            <div class="floating-chip chip-bottom"><span></span> Building something cool</div>
+          </div>
+        </section>
+
+        <section class="stats-row">
+          <div class="stat"><strong>02</strong><span>Featured projects</span></div>
+          <div class="stat"><strong>Luau</strong><span>Main language</span></div>
+          <div class="stat"><strong>Always</strong><span>Learning & improving</span></div>
+        </section>
+
+        <section class="section-block" id="projects">
+          <div class="section-heading">
+            <div><div class="eyebrow">SELECTED WORK</div><h2>Projects <span class="muted-count">/ 02</span></h2></div>
+            <span class="section-note">A few things I've been building</span>
+          </div>
+          <div class="project-grid">
+            <article class="work-card" data-search="round timer system countdown user interface roblox">
+              <div class="project-preview timer-preview">
+                <div class="preview-grid"></div>
+                <div class="timer-widget"><span class="timer-label">ROUND STARTS IN</span><strong>00:22<span>:67</span></strong><i>◷</i></div>
+                <span class="preview-tag">GAME SYSTEM</span>
+              </div>
+              <div class="work-card-body">
+                <div class="work-title-row"><h3>Round Timer System</h3><span class="card-arrow">↗</span></div>
+                <p>A clean countdown interface concept for round-based gameplay, designed to keep players informed.</p>
+                <div class="tag-row"><span>Luau</span><span>UI</span><span>Gameplay</span></div>
+                <button class="details-button" data-project="timer">View project details <span>→</span></button>
+              </div>
+            </article>
+            <article class="work-card" data-search="obby framework checkpoints stages respawn roblox">
+              <div class="project-preview obby-preview">
+                <div class="obby-platform platform-a"></div><div class="obby-platform platform-b"></div><div class="obby-platform platform-c"></div>
+                <div class="obby-ball"></div><span class="preview-tag">GAMEPLAY SYSTEM</span>
+                <div class="obby-caption">STAGE <b>08</b> <span>CHECKPOINT REACHED</span></div>
+              </div>
+              <div class="work-card-body">
+                <div class="work-title-row"><h3>Obby Framework</h3><span class="card-arrow">↗</span></div>
+                <p>A modular obstacle-course foundation with checkpoint progression and clear player feedback.</p>
+                <div class="tag-row"><span>Luau</span><span>Checkpoints</span><span>Systems</span></div>
+                <button class="details-button" data-project="obby">View project details <span>→</span></button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block lower-grid" id="skills">
+          <div class="lower-card">
+            <div class="eyebrow">MY TOOLKIT</div><h2>Skills & tools</h2>
+            <p class="subcopy">The tools I use to turn ideas into playable experiences.</p>
+            <div class="skill-list">
+              <div><span class="skill-icon">Lu</span><span><b>Luau scripting</b><small>Gameplay logic & systems</small></span><i>01</i></div>
+              <div><span class="skill-icon">UI</span><span><b>UI development</b><small>Interfaces & player feedback</small></span><i>02</i></div>
+              <div><span class="skill-icon">⚙</span><span><b>Game systems</b><small>Round flow & checkpoints</small></span><i>03</i></div>
+            </div>
+          </div>
+          <div class="lower-card about-card" id="about">
+            <div class="eyebrow">A LITTLE ABOUT ME</div><h2>Curious by nature.</h2>
+            <p>I enjoy experimenting with ideas, solving scripting problems, and making the small details feel great. I'm always learning and improving my craft.</p>
+            <div class="about-callout"><span>✳</span><div><b>Current focus</b><small>Building better gameplay systems and polished interfaces.</small></div></div>
+          </div>
+        </section>
+
+        <section class="contact-banner" id="contact">
+          <div><div class="eyebrow">HAVE AN IDEA?</div><h2>Let's build something fun.</h2><p>Have a project in mind? Reach out and let's talk about it.</p></div>
+          <a href="https://www.roblox.com/" target="_blank" rel="noreferrer" class="primary-button">Find me on Roblox <span>↗</span></a>
+        </section>
+        <footer><span>© 2026 Floatie Duckie</span><span>Designed & built with <b>✦</b> and Luau energy.</span></footer>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="eyebrow">PROJECT DETAILS</div>
+      <h2 id="modalTitle">Project</h2>
+      <p id="modalDescription"></p>
+      <div class="modal-info"><span>ROLE</span><b>Roblox scripting & UI concept</b><span>TECH</span><b>Luau · Roblox Studio</b></div>
+      <p class="modal-hint">Add your real gameplay screenshots, video, and public game link here when they're ready.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
